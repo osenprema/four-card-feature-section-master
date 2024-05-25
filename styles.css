@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Poppins';
+  src: url("./assets/fonts/Poppins-Regular.ttf"); }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Poppins';
+  font-size: 15px; }
+
+/* 360 × 640 (small mobile) */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+main {
+  width: 85%;
+  padding: 35px 0;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto repeat(4, 1fr);
+  gap: 20px; }
+  main h1, main p {
+    color: #a3a5ae; }
+  main h2 {
+    color: #4c4e61; }
+  main .main__header {
+    text-align: center;
+    padding-bottom: 30px; }
+    main .main__header h1 {
+      font-size: 1.5rem;
+      font-weight: 200; }
+    main .main__header h2 {
+      font-size: 1.3rem;
+      font-weight: 600; }
+    main .main__header p {
+      margin-top: 15px;
+      font-size: 0.9rem; }
+  main div:not(.main__header) {
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px -8px #a3a5ae; }
+    main div:not(.main__header) h2 {
+      font-size: 1rem; }
+    main div:not(.main__header) p {
+      font-size: 0.9rem;
+      margin-top: 8px; }
+    main div:not(.main__header) img {
+      width: 45px;
+      margin-top: 30px;
+      justify-self: end;
+      align-self: end; }
+  main .main__supervisor {
+    border-top: 3px solid #45d3d3; }
+  main .main__team {
+    border-top: 3px solid #ea5353; }
+  main .main__karma {
+    border-top: 3px solid #fcaf4a; }
+  main .main__calculator {
+    border-top: 3px solid #549ef2; }
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  color: #a3a5ae;
+  margin-bottom: 15px;
+  display: none; }
+
+.attribution a {
+  color: #4c4e61;
+  font-weight: bold;
+  text-decoration: none; }
+
+/* 720 × 1280 (large mobile) */
+@media screen and (min-width: 720px) {
+  main {
+    width: 65%; }
+    main .main__header h1 {
+      font-size: 2.2rem; }
+    main .main__header h2 {
+      font-size: 2rem; }
+    main .main__header p {
+      font-size: 1.4rem; }
+    main div:not(.main__header) {
+      padding: 20px 35px; }
+      main div:not(.main__header) h2 {
+        font-size: 1.3rem; }
+      main div:not(.main__header) p {
+        font-size: 1.2rem; }
+
+  .attribution {
+    display: block; } }
+/* Mobiles in landscape position  */
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  main {
+    width: 90vw;
+    height: 90vh;
+    padding: 2vh 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    main div:not(.main__header) {
+      padding: 10px 15px; }
+      main div:not(.main__header) h2 {
+        font-size: 0.5rem; }
+      main div:not(.main__header) p {
+        margin-top: 0.5vh;
+        font-size: 0.5rem; }
+      main div:not(.main__header) img {
+        width: 15px;
+        margin-top: 5vh; }
+    main .main__header {
+      padding: 0 25vw;
+      grid-column: 1 / span 3;
+      grid-row: 1; }
+      main .main__header h1 {
+        margin-top: 0;
+        font-size: 1rem; }
+      main .main__header h2 {
+        font-size: 0.8rem; }
+      main .main__header p {
+        margin-top: 2vh;
+        font-size: 0.5rem; }
+    main .main__supervisor {
+      grid-column: 1;
+      grid-row: 3 / span 2; }
+    main .main__team {
+      grid-column: 2;
+      grid-row: 2 / span 2; }
+    main .main__karma {
+      grid-column: 2;
+      grid-row: 4 / span 2; }
+    main .main__calculator {
+      grid-column: 3;
+      grid-row: 3 / span 2; } }
+@media screen and (min-width: 668px) and (max-width: 1280px) and (orientation: landscape) {
+  main {
+    width: 80vw;
+    height: 75vh;
+    padding: 2vh 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    main div:not(.main__header) {
+      padding: 15px 20px; }
+      main div:not(.main__header) h2 {
+        font-size: 1rem; }
+      main div:not(.main__header) p {
+        margin-top: 0.5vh;
+        font-size: 0.9rem; }
+      main div:not(.main__header) img {
+        width: 25px;
+        margin-top: 2vh; }
+    main .main__header {
+      padding: 0 20vw;
+      grid-column: 1 / span 3;
+      grid-row: 1; }
+      main .main__header h1 {
+        margin-top: 0;
+        font-size: 2rem; }
+      main .main__header h2 {
+        font-size: 1.5rem; }
+      main .main__header p {
+        margin-top: 2vh;
+        font-size: 1rem; }
+    main .main__supervisor {
+      grid-column: 1;
+      grid-row: 3 / span 2; }
+    main .main__team {
+      grid-column: 2;
+      grid-row: 2 / span 2; }
+    main .main__karma {
+      grid-column: 2;
+      grid-row: 4 / span 2; }
+    main .main__calculator {
+      grid-column: 3;
+      grid-row: 3 / span 2; } }
+/* 1366 × 768 (medium laptop) */
+@media screen and (min-width: 1366px) {
+  main {
+    width: 80vw;
+    height: 85vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    main div:not(.main__header) h2 {
+      font-size: 1rem; }
+    main div:not(.main__header) p {
+      font-size: 0.9rem; }
+    main .main__header {
+      padding: 0 18vw 2vh;
+      grid-column: 1 / span 3;
+      grid-row: 1; }
+      main .main__header h1 {
+        font-size: 2rem; }
+      main .main__header h2 {
+        font-size: 1.5rem; }
+      main .main__header p {
+        font-size: 1.2rem; }
+    main .main__supervisor {
+      grid-column: 1;
+      grid-row: 3 / span 2; }
+    main .main__team {
+      grid-column: 2;
+      grid-row: 2 / span 2; }
+    main .main__karma {
+      grid-column: 2;
+      grid-row: 4 / span 2; }
+    main .main__calculator {
+      grid-column: 3;
+      grid-row: 3 / span 2; } }
+/* 1440 × 900 (medium desktop) */
+@media screen and (min-width: 1440px) {
+  main {
+    width: 80vw;
+    height: 75vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr); }
+    main div:not(.main__header) h2 {
+      font-size: 1rem; }
+    main div:not(.main__header) p {
+      font-size: 0.9rem; }
+    main .main__header {
+      grid-column: 1 / span 3;
+      grid-row: 1; }
+      main .main__header h1 {
+        font-size: 2rem; }
+      main .main__header h2 {
+        font-size: 1.5rem; }
+      main .main__header p {
+        font-size: 1.2rem; } }
+/* 1920 × 1080 (large desktop) */
+@media screen and (min-width: 1920px) {
+  main div:not(.main__header) h2 {
+    font-size: 1.5rem; }
+  main div:not(.main__header) p {
+    font-size: 1.3rem; }
+  main .main__header h1 {
+    font-size: 2.5rem; }
+  main .main__header h2 {
+    font-size: 2rem; }
+  main .main__header p {
+    font-size: 1.6rem; } }
+/* Desktops in portrait position  */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  main {
+    width: 50%; } }
+@media screen and (min-width: 1080px) and (orientation: portrait) {
+  main {
+    width: 70%; }
+    main .main__header h1 {
+      font-size: 3.5rem; }
+    main .main__header h2 {
+      font-size: 3rem; }
+    main .main__header p {
+      font-size: 2rem; }
+    main div:not(.main__header) {
+      padding: 30px 50px; }
+      main div:not(.main__header) h2 {
+        font-size: 2.4rem; }
+      main div:not(.main__header) p {
+        font-size: 2rem; }
+      main div:not(.main__header) img {
+        width: 50px; } }
+
+/*# sourceMappingURL=styles.css.map */
